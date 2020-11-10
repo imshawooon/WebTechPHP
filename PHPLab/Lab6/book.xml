@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<books>
+  <book>
+    <bno>01</bno>
+    <bname>ABC</bname>
+    <pname>abc</pname>
+    <isbn>10</isbn>
+    <price>250</price>
+  </book>
+  <book>
+    <bno/>
+    <bname>ABC</bname>
+    <pname>abc</pname>
+    <isbn>10</isbn>
+    <price>250</price>
+  </book>
+</books>
