@@ -11,7 +11,7 @@
 				<table>
 					<tr>
 						<td align="left">Full Name:</td>
-						<td><input type="text" value="<?php echo $name?>" name="name"><span><?php echo $err_name;?></span></td>
+						<td><input type="text" value="<?php echo $name ?>" name="name"><span><?php echo $err_name; ?></span></td>
 					</tr>
 					<tr>
 						<td align="left">Username:</td>
