@@ -3,12 +3,12 @@
   <user>
     <username>abcdefgh</username>
     <password>12345678</password>
-    <type>user</type>
+    <type>manager</type>
   </user>
   <user>
     <username>shawon12345</username>
     <password>12345678</password>
-    <type>user</type>
+    <type>manager</type>
   </user>
   
 </users>

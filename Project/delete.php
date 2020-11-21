@@ -1,3 +1,10 @@
+<?php 
+	$uname="";
+	if(!isset($_COOKIE["username"])){
+		header("Location: loginMM.php");
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
