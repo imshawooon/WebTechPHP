@@ -1,3 +1,10 @@
+<?php 
+	$uname="";
+	if(!isset($_COOKIE["username"])){
+		header("Location: loginMM.php");
+	}
+?>
+
 <html>
 	<head>
 
@@ -84,6 +91,41 @@ table {
 						<td>Vegetable</td>
 						<td>100 Kg</td>
 						<td>30 Tk/kg</td>
+						<td>01/01/2020</td>
+						<td>01/01/2020</td>
+						<td><a href="edit.php">Edit</a></td>
+						<td><a href="delete.php">Delete</a></td>
+					</tr>
+
+					<tr>
+						<td>03</td>
+						<td>Rom</td>
+						<td>Accessories</td>
+						<td>1TB 50 pc</td>
+						<td>3500 Tk/pc</td>
+						<td>01/01/2020</td>
+						<td>01/01/2020</td>
+						<td><a href="edit.php">Edit</a></td>
+						<td><a href="delete.php">Delete</a></td>
+					</tr>
+					<tr>
+						<td>04</td>
+						<td>Ram</td>
+						<td>Accessories</td>
+						<td>8GB 50 pc</td>
+						<td>2500 Tk/pc</td>
+						<td>01/01/2020</td>
+						<td>01/01/2020</td>
+						<td><a href="edit.php">Edit</a></td>
+						<td><a href="delete.php">Delete</a></td>
+					</tr>
+
+					<tr>
+						<td>05</td>
+						<td>Mouse</td>
+						<td>Accessories</td>
+						<td>50 pc</td>
+						<td>350 Tk/pc</td>
 						<td>01/01/2020</td>
 						<td>01/01/2020</td>
 						<td><a href="edit.php">Edit</a></td>

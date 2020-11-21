@@ -1,3 +1,10 @@
+<?php 
+	$uname="";
+	if(!isset($_COOKIE["username"])){
+		header("Location: loginMM.php");
+	}
+?>
+
 <?php include_once "addProduct_validation.php" ;?>
 
 <html>

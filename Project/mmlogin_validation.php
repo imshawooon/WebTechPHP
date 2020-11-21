@@ -20,33 +20,35 @@
 			$pass=htmlspecialchars($_POST["pass"]);
 		}
 		
-		if(!$hasError){
-			$users = simplexml_load_file("data.xml");
-			
-			$data = $users->user;
-			
-			$i=0;
-			for( ;$i<3;$i++)
-			{
+		if(!$hasError)
+		{
 				
-				if($data[$i]->username == $uname && $data[$i]->password == $pass)
+			$xml=simplexml_load_file("data.xml");
+			$users = $xml->user;
+			$flag=false;
+				foreach($users as $user)
+				{
+					if($user->username == $uname && $user->password== $pass)
+					{
+						$flag = true;
+						
+						setcookie("username",$uname,time() + 120);
+					}
+				}
+				if($flag)
 				{
 					header("Location: Marketing_Manager.php");
-					break;
 				}
 				else
 				{
-					echo "Invalid id or pass";
+					echo "Invalid Username or Password";
 				}
-					
-			}
-			if($i>2)
-			{
-				echo "Invalid id or pass";
-			}
-				
-			
 		}
+		else
+		{
+			echo "Invalid Username or Password";
+		}
+
 	}
-	
+		
 ?>

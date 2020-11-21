@@ -1,3 +1,10 @@
+<?php 
+	$uname="";
+	if(!isset($_COOKIE["username"])){
+		header("Location: loginMM.php");
+	}
+?>
+
 <html>
 	<head>
 
@@ -80,10 +87,43 @@ table {
 					<tr>
 						<td>02</td>
 						<td>Sham</td>
-						<td>Sn. Employee</td>
+						<td>Sr. Employee</td>
 						<td>sham@gmail.com</td>
 						<td>019977000</td>
 						<td>20500</td>
+						<td><a href="edit.php">Edit</a></td>
+						<td><a href="delete.php">Delete</a></td>
+					</tr>
+
+					<tr>
+						<td>03</td>
+						<td>Jodu</td>
+						<td>Sr. Employee</td>
+						<td>jodu@gmail.com</td>
+						<td>019977000</td>
+						<td>25500</td>
+						<td><a href="edit.php">Edit</a></td>
+						<td><a href="delete.php">Delete</a></td>
+					</tr>
+
+					<tr>
+						<td>04</td>
+						<td>Modhu</td>
+						<td>Jr. Employee</td>
+						<td>modhu@gmail.com</td>
+						<td>01871246000</td>
+						<td>12500</td>
+						<td><a href="edit.php">Edit</a></td>
+						<td><a href="delete.php">Delete</a></td>
+					</tr>
+
+					<tr>
+						<td>05</td>
+						<td>Kodu</td>
+						<td>Intern</td>
+						<td>kodu@gmail.com</td>
+						<td>01396785324</td>
+						<td>10500</td>
 						<td><a href="edit.php">Edit</a></td>
 						<td><a href="delete.php">Delete</a></td>
 					</tr>
