@@ -23,7 +23,7 @@
 		if(!$hasError)
 		{
 				
-			$xml=simplexml_load_file("data.xml");
+			$xml=simplexml_load_file("mmdata.xml");
 			$users = $xml->user;
 			$flag=false;
 				foreach($users as $user)

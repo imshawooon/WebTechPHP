@@ -10,5 +10,10 @@
     <password>12345678</password>
     <type>manager</type>
   </user>
+  <user>
+    <username>shawon</username>
+    <password>12345</password>
+    <type>manager</type>
+  </user>
   
 </users>
