@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<customers>
+  <customer>
+    <name>Shahriar Hossain</name>
+    <username>shahriar</username>
+    <password>Shahriar123#</password>
+    <email>axyz28505@gmail.com</email>
+    <gender>Male</gender>
+    <phone>01775310047</phone>
+    <address>Dhanmondi</address>
+    <city>Dhaka</city>
+  </customer>
+</customers>

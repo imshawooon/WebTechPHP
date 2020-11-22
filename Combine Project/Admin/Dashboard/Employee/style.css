@@ -1,0 +1,29 @@
+.tblEmpInfo
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td
+{
+	border: 1px solid black;
+	text-align: center;
+}
+
+.btnDelete
+
+{
+	background-color: #F21414;
+	font-size: 15px;
+}
+
+.btnEdit
+{
+	background-color: #0BABC4;
+	font-size: 15px;
+
+
+}
+

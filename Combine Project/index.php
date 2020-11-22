@@ -74,9 +74,10 @@
 	<h1 align="left">One-Stop Solution</h1>
 
 	<a href="/WebTech/Combine Project/Admin/login.php"><button class="button button1">Admin</button></a><br><br>
-	<a href="product_info.php"><button class="button button2">HR</button></a><br><br>
+	<a href="/WebTech/Combine Project/HR_Manager/views/hrlogin.php"><button class="button button2">HR</button></a><br><br>
 	<a href="/webtech/Combine Project/Marketing_Manager/loginMM.php"><button class="button button3">Marketing Manager</button></a><br><br>
   <a href="/WebTech/Combine Project/Employee/LogInEmp.html"><button class="button button4">Employee</button></a><br><br>
+  <a href="/webtech/Combine Project/Customer/views/customerlogin.php"><button class="button button3">Customer</button></a><br><br>
 
 </body>
 </html>

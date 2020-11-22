@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<employees>
+  <employee>
+    <serial>1</serial>
+    <eid>12345</eid>
+    <name>Md. Alimul Reza</name>
+    <username>alimulreza</username>
+    <password>Alimul123#</password>
+    <email>alimulreza2802@gmail.com</email>
+    <gender>Male</gender>
+    <dob>1998-02-28</dob>
+    <phone>01775310047</phone>
+    <address>Bashundhara</address>
+    <city>Dhaka</city>
+    <salary>20000</salary>
+    <jdate>2020-11-04</jdate>
+  </employee>
+  <employee>
+    <serial>2</serial>
+    <eid>123456</eid>
+    <name>Shahriar Hossain</name>
+    <username>shahriar</username>
+    <password>Shahriar123#</password>
+    <email>axyz28505@gmail.com</email>
+    <gender>Male</gender>
+    <dob>1996-08-02</dob>
+    <phone>01521404093</phone>
+    <address>Mirpur</address>
+    <city>Dhaka</city>
+    <salary>30000</salary>
+    <jdate>2020-11-01</jdate>
+  </employee>
+</employees>
