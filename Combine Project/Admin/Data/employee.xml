@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+	<employee>
+		<name>Rafeed Mohammad</name>
+		<password>1234</password>
+		<email>rafeed.cse@gmail.com</email>
+		<address>Dhaka</address>
+		<salary>30000</salary>
+	</employee>
+
+	<employee>
+		<name>Samiul Bari</name>
+		<password>123</password>
+		<email>sami.bari@gmail.com</email>
+		<address>Dhaka</address>
+		<salary>40000</salary>
+	</employee>
+
+	<employee>
+		<name>Ani Khan</name>
+		<password>1234</password>
+		<email>ani_brac@gmail.com</email>
+		<address>Dhaka</address>
+		<salary>45000</salary>
+	</employee>
+
+	<employee>
+		<name>Buka Chele</name>
+		<password>123</password>
+		<email>buka.chele@outlook.com</email>
+		<address>Ijjotpur</address>
+		<salary>20000</salary>
+	</employee>
+
+</employees>

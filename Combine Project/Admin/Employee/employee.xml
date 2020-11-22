@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+	
+<employee>
+	<id>E102</id>
+	<name>Sadab Ul Bari</name>
+	<email>sadab@hotmail.com</email>
+	<password>1111</password>
+	<salary>40000</salary>
+</employee>
+<employee>
+	<id>E101</id>
+	<name>Rafeed Mohammad</name>
+	<email>rafeed.cse@gmail.com</email>
+	<password>1234</password>
+	<salary>30000</salary>
+</employee>
+</employees>
