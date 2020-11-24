@@ -19,6 +19,8 @@ echo "Successfully login";
 				echo "<th>Username</th>";
 				echo "<th>Phone</th>";
 				echo "<th>Gender</th>";
+				echo "<th>Edit</th>";
+				echo "<th>Delete</th>";
 				echo "</tr>";
 
 				while ($row=mysqli_fetch_assoc($result)) {
@@ -26,6 +28,8 @@ echo "Successfully login";
 				echo "<td>".$row["Username"]."</td>";
 				echo "<td>".$row["Password"]."</td>";
 				echo "<td>".$row["Gender"]."</td>";
+				echo '<td><a href="edit.php">Edit</a></td>';
+				echo '<td><a href="delete.php">Delete</a></td>';
 				echo "</tr>";
 
 				}
