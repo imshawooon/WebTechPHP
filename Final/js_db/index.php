@@ -1,5 +1,6 @@
 <?php
 	require_once 'models/db_connect.php';
+
 	$hasError=false;
 
 	if(isset($_POST["login"])){
@@ -7,7 +8,6 @@
 
 			$uname= $_POST["uname"];
 			$pass= $_POST["pass"];
-
 			$result = authenticate($uname,$pass);
 			if($result){
 				header("Location: dashboard.php");
@@ -19,8 +19,8 @@
 	}
 	
 	function authenticate($uname,$pass){
-		$password = md5($password);
-		$query = "SELECT username FROM users WHERE username='$uname' AND password='$pass'";
+		$pass = md5($pass);
+		$query = "SELECT username FROM users WHERE Username='$uname' AND Password='$pass'";
 		$result = get($query);
 		if(count($result) > 0) return true;
 		

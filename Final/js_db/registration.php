@@ -19,7 +19,7 @@
 	
 	function addUser($name,$uname,$pass,$email,$phone)
 	{
-		$p = md5($_POST["pass"]);
+		$pass = md5($pass);
 		$query= "INSERT INTO users VALUES ('$name','$uname','$pass','$email','$phone')";
 		execute($query);	
 	}
