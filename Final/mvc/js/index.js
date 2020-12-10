@@ -14,6 +14,7 @@ function validate(){
 	if(uname.value == ""){
 		hasErr= true;
 		err_uname.innerHTML = "Username Required";
+		err_uname.style.color="red";
 		uname.focus();
 		return !hasErr;
 	}
@@ -21,6 +22,7 @@ function validate(){
 	if(pass.value == ""){
 		hasErr= true;
 		err_pass.innerHTML = "Password Required";
+		err_pass.style.color="red";
 		pass.focus();
 		return !hasErr;
 	}	

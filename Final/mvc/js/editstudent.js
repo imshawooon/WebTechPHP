@@ -4,15 +4,18 @@ function getElement(id){
 function validate(){
 	refresh();
 	var hasErr=false;
-	var id = getElement("id");
+	var name = getElement("name");
+	var dob = getElement("dob");
+	var credit = getElement("credit");
+	var cgpa = getElement("cgpa");
+	var deptid = getElement("deptid");
+	var err_name = getElement("err_name");
+	var err_dob = getElement("err_dob");
+	var err_credit = getElement("err_credit");
+	var err_cgpa = getElement("err_cgpa");
+	var err_deptid = getElement("err_deptid");
 	
 	
-	if(id.value == ""){
-		hasErr= true;
-		err_id.innerHTML = "ID Required";
-		id.focus();
-		return !hasErr;
-	}
 
 	if(name.value == ""){
 		hasErr= true;
@@ -43,7 +46,7 @@ function validate(){
 
 	if(deptid.value == ""){
 		hasErr= true;
-		err_deptid.innerHTML = "deptid  Required";
+		err_deptid.innerHTML = "deptid Number Required";
 		deptid.focus();
 		return !hasErr;
 	}	
@@ -51,18 +54,16 @@ function validate(){
 
 }
 function refresh(){
-	var err_id = getElement("err_id");
 	var err_name = getElement("err_name");
 	var err_dob = getElement("err_dob");
 	var err_credit = getElement("err_credit");
 	var err_cgpa = getElement("err_cgpa");
 	var err_deptid = getElement("err_deptid");
 	
-	err_id.innerHTML = "";
 	err_name.innerHTML = "";
 	err_dob.innerHTML = "";
 	err_credit.innerHTML = "";
 	err_cgpa.innerHTML = "";
-	err_deptid.innerHTML = "";
+	err_phone.innerHTML = "";
 	
 }

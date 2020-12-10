@@ -1,30 +1,5 @@
 <?php
-	require_once 'models/db_connect.php';
-	
-	$hasError=false;
-	if(isset($_POST["submit"])){
-		
-		if(!$hasError){
-			
-			$id= $_POST["id"];
-			$name= $_POST["name"];
-			$dob= $_POST["dob"];
-			$credit= $_POST["credit"];
-			$cgpa= $_POST["cgpa"];
-			$deptid= $_POST["deptid"];
-
-			addUser($id,$name,$dob,$credit,$cgpa,$deptid);
-			header("Location: dashboard.php");
-		}
-	}
-	
-	function addUser($id,$name,$dob,$credit,$cgpa,$deptid)
-	{
-		
-		$query= "INSERT INTO students VALUES ('$id','$name','$dob','$credit','$cgpa','$deptid')";
-		execute($query);	
-	}
-	
+	require_once 'controllers/student_controller.php';
 	
 ?>
 

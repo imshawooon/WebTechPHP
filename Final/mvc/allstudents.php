@@ -1,9 +1,6 @@
 <?php 
-	require_once 'models/db_connect.php';
-	
-		$query="select * from students";
-		$result=get($query);
-		
+	require_once 'controllers/student_controller.php';
+	$allstudent=getallstudent();	
 ?>
 
 
@@ -25,7 +22,7 @@
 					<th>Delete Student</th>
 				</tr>
 				<?php 
-					foreach($result as $student)
+					foreach($allstudent as $student)
 					{
 						
 						echo "<tr>";
@@ -35,6 +32,8 @@
 							echo "<td>".$student["credit"]."</td>";
 							echo "<td>".$student["cgpa"]."</td>";
 							echo "<td>".$student["dept_id"]."</td>";
+							echo "<td><a href=editstudent.php?id=".$student["id"].">Edit</a></td>";
+							echo "<td><a href=deletestudent.php?id=".$student["id"].">Delete</a></td>";
 							
 						echo "</tr>";
 					}
