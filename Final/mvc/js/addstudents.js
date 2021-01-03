@@ -5,7 +5,7 @@ function validate(){
 	refresh();
 	var hasErr=false;
 	var id = getElement("id");
-	
+	debugger;
 	
 	if(id.value == ""){
 		hasErr= true;

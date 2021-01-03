@@ -64,6 +64,6 @@ function refresh(){
 	err_dob.innerHTML = "";
 	err_credit.innerHTML = "";
 	err_cgpa.innerHTML = "";
-	err_phone.innerHTML = "";
+	err_deptid.innerHTML = "";
 	
 }

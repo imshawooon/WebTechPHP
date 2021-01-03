@@ -1,8 +1,8 @@
+
+
 <?php 
-	$uname="";
-	if(!isset($_COOKIE["username"])){
-		header("Location: loginMM.php");
-	}
+	require_once 'controllers/employee_controller.php';
+	$allemployee=getallemployee();	
 ?>
 
 <html>
@@ -65,68 +65,37 @@ table {
 					<tr>
 						<td><b>Employee ID</b></td>
 						<td><b>Employee Name</b></td>
-						<td><b>Employee Position</b></td>
 						<td><b>Email</b></td>
+						<td><b>Gender</b></td>
+						<td><b>Birth Date</b></td>
 						<td><b>Phone</b></td>
 						<td><b>Salary</b></td>
+						<td><b>Address</b></td>
+						<td><b>Join Date</b></td>
 						<td><b>Edit</b></td>
 						<td><b>Delete</b></td>
 					</tr>
 					
-					<tr>
-						<td>01</td>
-						<td>Ram</td>
-						<td>Employee</td>
-						<td>ram@gmail.com</td>
-						<td>017777000</td>
-						<td>15500</td>
-						<td><a href="edit.php">Edit</a></td>
-						<td><a href="delete.php">Delete</a></td>
-					</tr>
-
-					<tr>
-						<td>02</td>
-						<td>Sham</td>
-						<td>Sr. Employee</td>
-						<td>sham@gmail.com</td>
-						<td>019977000</td>
-						<td>20500</td>
-						<td><a href="edit.php">Edit</a></td>
-						<td><a href="delete.php">Delete</a></td>
-					</tr>
-
-					<tr>
-						<td>03</td>
-						<td>Jodu</td>
-						<td>Sr. Employee</td>
-						<td>jodu@gmail.com</td>
-						<td>019977000</td>
-						<td>25500</td>
-						<td><a href="edit.php">Edit</a></td>
-						<td><a href="delete.php">Delete</a></td>
-					</tr>
-
-					<tr>
-						<td>04</td>
-						<td>Modhu</td>
-						<td>Jr. Employee</td>
-						<td>modhu@gmail.com</td>
-						<td>01871246000</td>
-						<td>12500</td>
-						<td><a href="edit.php">Edit</a></td>
-						<td><a href="delete.php">Delete</a></td>
-					</tr>
-
-					<tr>
-						<td>05</td>
-						<td>Kodu</td>
-						<td>Intern</td>
-						<td>kodu@gmail.com</td>
-						<td>01396785324</td>
-						<td>10500</td>
-						<td><a href="edit.php">Edit</a></td>
-						<td><a href="delete.php">Delete</a></td>
-					</tr>
+					<?php 
+					foreach($allemployee as $employee)
+					{
+						
+						echo "<tr>";
+							echo "<td>".$employee["eid"]."</td>";
+							echo "<td>".$employee["ename"]."</td>";
+							echo "<td>".$employee["email"]."</td>";
+							echo "<td>".$employee["gender"]."</td>";
+							echo "<td>".$employee["birth_date"]."</td>";
+							echo "<td>".$employee["phone"]."</td>";
+							echo "<td>".$employee["salary"]."</td>";
+							echo "<td>".$employee["address"]."</td>";
+							echo "<td>".$employee["join_date"]."</td>";
+							echo "<td><a href=editemployee.php?id=".$employee["eid"].">Edit</a></td>";
+							echo "<td><a href=deleteemployee.php?id=".$employee["eid"].">Delete</a></td>";
+							
+						echo "</tr>";
+					}
+				?>
 					
 				</table>
 			

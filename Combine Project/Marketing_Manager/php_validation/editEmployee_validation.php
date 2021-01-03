@@ -22,7 +22,7 @@
 	
 	$has_error = false;
 	
-	if(isset($_POST["submit"])){
+	if(isset($_POST["Edit"])){
 		if(empty($_POST["eid"])){
 			$err_eid=" *Employee ID Required";
 			$has_error = true;
@@ -121,15 +121,13 @@
 		
 		if(!$has_error){
 			
-			addemployee($eid,$ename,$email,$gender,$birth_date,$phone,$salary,$address,$join_date);
+			editemployee($eid,$ename,$email,$gender,$birth_date,$phone,$salary,$address,$join_date);
 			header("Location: Employee_info.php");
 		}
 	}
 	
-	function addemployee($eid,$ename,$email,$gender,$birth_date,$phone,$salary,$address,$join_date)
-	{
-		
-		$query= "INSERT INTO employees VALUES ('$eid','$ename','$email','$gender','$birth_date','$phone','$salary','$address','$join_date')";
-		execute($query);	
-	}
+	function editemployee($eid,$ename,$email,$gender,$birth_date,$phone,$salary,$address,$join_date){
+        $query="UPDATE employees SET ename='$ename',email='$email',birth_date='$birth_date',phone='$phone',salary='$salary',address='$address',join_date='$join_date' WHERE eid='$eid'";
+        execute($query);
+    }
 ?>

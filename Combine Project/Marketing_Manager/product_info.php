@@ -81,7 +81,7 @@ table {
 						<td>100 Tk/kg</td>
 						<td>01/01/2020</td>
 						<td>01/01/2020</td>
-						<td><a href="edit.php">Edit</a></td>
+						<td><a href="editproduct.php">Edit</a></td>
 						<td><a href="delete.php">Delete</a></td>
 					</tr>
 
@@ -93,7 +93,7 @@ table {
 						<td>30 Tk/kg</td>
 						<td>01/01/2020</td>
 						<td>01/01/2020</td>
-						<td><a href="edit.php">Edit</a></td>
+						<td><a href="editproduct.php">Edit</a></td>
 						<td><a href="delete.php">Delete</a></td>
 					</tr>
 
@@ -105,7 +105,7 @@ table {
 						<td>3500 Tk/pc</td>
 						<td>01/01/2020</td>
 						<td>01/01/2020</td>
-						<td><a href="edit.php">Edit</a></td>
+						<td><a href="editproduct.php">Edit</a></td>
 						<td><a href="delete.php">Delete</a></td>
 					</tr>
 					<tr>
@@ -116,7 +116,7 @@ table {
 						<td>2500 Tk/pc</td>
 						<td>01/01/2020</td>
 						<td>01/01/2020</td>
-						<td><a href="edit.php">Edit</a></td>
+						<td><a href="editproduct.php">Edit</a></td>
 						<td><a href="delete.php">Delete</a></td>
 					</tr>
 
@@ -128,7 +128,7 @@ table {
 						<td>350 Tk/pc</td>
 						<td>01/01/2020</td>
 						<td>01/01/2020</td>
-						<td><a href="edit.php">Edit</a></td>
+						<td><a href="editproduct.php">Edit</a></td>
 						<td><a href="delete.php">Delete</a></td>
 					</tr>
 					

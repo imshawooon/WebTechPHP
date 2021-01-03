@@ -37,21 +37,23 @@ div {
 		
 	
 		<div>
-			<form action="" method="post">
+			<form action="" onsubmit="return validate()" method="post">
 				<table>
 					<tr>
 						<td>All field is mandatory *</td>
 					</tr>
 					<tr>
 						<td>Username:</td>
-						<td><input type="text" value="<?php echo $uname?>" name="uname"></td>
+						<td><input type="text" value="<?php echo $uname?>" name="uname" id="uname"></td>
 						<td><span style="color:red;">*<?php echo $err_uname;?></span>
+							<span id="err_uname"></span>
 						</td>
 					</tr>
 					<tr>
 						<td>Password:</td>
-						<td><input type="password" value="<?php echo $pass?>" name="pass"></td>
+						<td><input type="password" value="<?php echo $pass?>" name="pass" id="pass"></td>
 						<td><span style="color:red;">*<?php echo $err_pass;?></span>
+							<span id="err_pass"></span>
 						</td>
 					</tr>
 					<tr>
@@ -61,6 +63,9 @@ div {
 					</tr>
 				</table>
 			</form>
+			<script src="js/loginMM.js">
+			
+		</script>
 			</div>
 		
 	</body>

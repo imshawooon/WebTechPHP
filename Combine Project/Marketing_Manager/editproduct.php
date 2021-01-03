@@ -5,7 +5,7 @@
 	}
 ?>
 
-<?php include_once "php_validation/addProduct_validation.php" ;?>
+<?php include_once "php_validation/editProduct_validation.php" ;?>
 
 <html>
 	<head>
@@ -19,19 +19,15 @@ table, td {
 
 
 </style>
-		<title>Add Product</title>
+		<title>Edit Product</title>
 	</head>
 	<body>
 		
-		<h1>Add Product</h1>
+		<h1>Edit Product</h1>
 		<form action="" onsubmit="return validate()" method="post">
 			
 				<table>
-
-				<tr>
-					<td align="right"><b>Product ID</b></td>
-					<td><input type="text" value="<?php echo $pid ?>" name="pid" id="pid"><span><?php echo $err_pid; ?></span><span id="err_pid"></span></td>
-				</tr>	
+	
 				<tr>
 					<td align="right"><b>Product Name*</b></td>
 					<td><input type="text" value="<?php echo $pname ?>" name="pname" id="pname">
@@ -65,12 +61,12 @@ table, td {
 					</tr>
 
 				<tr>
-					<td colspan="2" align="center"><input type="submit" name="submit" value="submit"></td>
+					<td colspan="2" align="center"><input type="submit" name="edit" value="edit"></td>
 				</tr>
 				</table>
 			
 		</form>
-		<script src="js/addproduct.js">
+		<script src="js/editproduct.js">
 			
 		</script>
 	</body>

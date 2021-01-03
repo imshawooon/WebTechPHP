@@ -9,13 +9,9 @@
 	$err_pc="";
 	$price="";
 	$err_price="";
-	$padd_day ="";
-	$padd_month ="";
-	$padd_year ="";
+	$padd_date ="";
 	$err_padd_date ="";
-	$pupdate_day ="";
-	$pupdate_month ="";
-	$pupdate_year ="";
+	$pupdate_date ="";
 	$err_pupdate_date ="";
 	
 	$has_error = false;
@@ -54,71 +50,21 @@
 			$price=htmlspecialchars($_POST["price"]);
 		}
 		
-		if(isset($_POST["day"]))
+		if(isset($_POST["padd_date"]))
 		{
-			$padd_day = $_POST["day"];
+			$padd_date = $_POST["padd_date"];
 		}
 		else{$err_padd_date = "*Day, Month, Year required";}
 		
-		if(isset($_POST["month"]))
-		{
-			$padd_month = $_POST["month"];
-		}
-		else{$err_padd_date = "*Day, Month, Year required";}
 		
-		if(isset($_POST["year"]))
-		{
-			$padd_year = $_POST["year"];
-		}
-		else{$err_padd_date = "*Day, Month, Year required";}
 
-		if(isset($_POST["day"]))
+		if(isset($_POST["pupdate_date"]))
 		{
-			$pupdate_day = $_POST["day"];
+			$pupdate_date = $_POST["pupdate_date"];
 		}
 		else{$err_pupdate_date = "*Day, Month, Year required";}
 		
-		if(isset($_POST["month"]))
-		{
-			$pupdate_month = $_POST["month"];
-		}
-		else{$err_pupdate_date = "*Day, Month, Year required";}
-		
-		if(isset($_POST["year"]))
-		{
-			$pupdate_year = $_POST["year"];
-		}
-		else{$err_pupdate_date = "*Day, Month, Year required";}
-
 	
-
-		
-
-		if(empty($_POST["address"])){
-			$err_address=" *Address required";
-			$hasError = true;
-		}
-		else{
-			$address=htmlspecialchars($_POST["address"]);
-		}
-
-		if(isset($_POST["day"]))
-		{
-			$join_day = $_POST["day"];
-		}
-		else{$err_join_date = "*Day, Month, Year required";}
-		
-		if(isset($_POST["month"]))
-		{
-			$join_month = $_POST["month"];
-		}
-		else{$err_join_date = "*Day, Month, Year required";}
-		
-		if(isset($_POST["year"]))
-		{
-			$join_year = $_POST["year"];
-		}
-		else{$err_join_date = "*Day, Month, Year required";}
 		
 		if(!$has_error){
 			
